@@ -47,7 +47,7 @@ header{
     background-color: whitesmoke;
     padding: 0 1%;
     box-sizing: border-box;
-    height: 80px;
+    min-height: 80px;
     transition: 0.5s;
     box-shadow: 0px 0px 8px 0px black;
 }
@@ -58,10 +58,13 @@ header h2{
 
 .header__logo{
     height: 60%;
+    display: flex;
 }
 
 .header__logo img{
     width: 50px;
+    height: 50px;
+    border-radius: 1000px;
 }
 
 .header__menu ul{
@@ -108,67 +111,6 @@ header h2{
     padding-bottom: 20px;
 }
 
-.carrousel{
-    width: 200px;
-    perspective: 800px;
-    position: relative;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.carrousel-fotos{
-    width: 100%;
-    position: absolute;
-    animation: rotar 10s infinite linear;
-    transform-style: preserve-3d;
-}
-
-.carrousel-fotos:hover{
-    animation-play-state: paused;
-    cursor: pointer;
-}
-
-.carrousel-fotos figure{
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    position: absolute;
-    box-shadow: 0px 0px 8px 0px black;
-    transition: all 3s ;
-}
-
-.carrousel-fotos figure:hover{
-    box-shadow: 0px 0px 0px 0px black;
-    transition: all 3s ;
-}
-
-.carrousel-fotos figure:nth-child(1){transform: rotateY(0deg) translateZ(360px);}
-.carrousel-fotos figure:nth-child(2){transform: rotateY(45deg) translateZ(360px);}
-.carrousel-fotos figure:nth-child(3){transform: rotateY(90deg) translateZ(360px);}
-.carrousel-fotos figure:nth-child(4){transform: rotateY(135deg) translateZ(360px);}
-.carrousel-fotos figure:nth-child(5){transform: rotateY(180deg) translateZ(360px);}
-.carrousel-fotos figure:nth-child(6){transform: rotateY(225deg) translateZ(360px);}
-.carrousel-fotos figure:nth-child(7){transform: rotateY(270deg) translateZ(360px);}
-.carrousel-fotos figure:nth-child(8){transform: rotateY(315deg) translateZ(360px);}
-.carrousel-fotos figure:nth-child(9){transform: rotateY(360deg) translateZ(360px);}
-
-.carrousel-fotos img{
-    width: 100%;
-    transition: all 3s;
-}
-
-.carrousel-fotos img:hover{
-    transform: scale(1.5);
-    transition: all 3s;
-}
-
-@keyframes rotar{
-    from{
-        transform: rotateY(0deg);
-    }to{
-        transform: rotateY(360deg);
-    }
-}
 
 /*Pagina Profesoras*/
 
@@ -363,6 +305,18 @@ footer{
     height: 30px;
     width: 30px;
     padding: 0px 10px;
+}
+
+/* Mesidia query - Mobile - Header*/
+@media (max-width:576px){
+    header{
+        flex-direction: column;
+    }
+    .header__menu ul li{
+        margin: 0;
+        font-weight: 200;
+        padding:5px;
+    }
 }
 
 /* Media query - Mobile - Profesoras*/
