@@ -235,7 +235,8 @@ header h2{
 /*Pagina Contacto*/
 
 .contenedor-formulario{
-height: 550px;
+    min-height: 550px;
+    padding-bottom: 10px;
 }
 
 .contenedor-formulario .formulario{
@@ -260,12 +261,18 @@ height: 550px;
     background: rgb(26, 95, 118);
     border: none;
     outline: none;
-    border-bottom: 2px solid lightblue;
+    border-bottom: 3px solid lightblue;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
     border-radius: 2px;
     color: whitesmoke;
+    transition: all 1.5s ease;
+}
+
+.contenedor-formulario .formulario .formulario-input:hover{
+    border-bottom: 3px solid gold;
+    transition: all 1.5s ease;
 }
 
 .contenedor-formulario .formulario #formularioTextarea{
@@ -307,15 +314,22 @@ footer{
     padding: 0px 10px;
 }
 
-/* Mesidia query - Mobile - Header*/
+/* Media query - Mobile - Header*/
 @media (max-width:576px){
     header{
         flex-direction: column;
+    }
+    .header__menu ul{
+        padding-left: 0;
     }
     .header__menu ul li{
         margin: 0;
         font-weight: 200;
         padding:5px;
+        border-right-style: groove;
+    }
+    .header__menu ul li:nth-child(5){
+        border-right-style: none;
     }
 }
 
@@ -323,11 +337,13 @@ footer{
 @media (max-width:576px){
     .tarjetas-profesoras{
         margin: 10px;
-        
     }
     .tarjetas-profesoras .lado{
         width: 70%;
         height: 70%;
+        left: 50px;
+        top: 100px;
+
     }
     #tarjetaPresentacionProfesoras{
         justify-content: space-evenly;
@@ -351,11 +367,11 @@ footer{
 @media (max-width:576px){
 
     .contenedor-formulario{
-        height: 550px;
+        flex-direction: column;
+        padding-bottom: 10px;
     }
     .contenedor-formulario .formulario{
         width: 70%;
-        max-width: 250px;
     }
 
 }
