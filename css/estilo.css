@@ -111,10 +111,17 @@ header h2{
     padding-bottom: 20px;
 }
 
-#carouselExample{
+.container{
     display: flex;
-    justify-content: center;
-    position: relative;
+    width: 100%;
+}
+.container img{
+    padding-left: 100px;
+    padding-bottom: 20px;
+    width: 80%;
+}
+.descripcion{
+    padding-bottom: 60px;
 }
 
 /*Pagina Profesoras*/
@@ -386,6 +393,20 @@ footer{
     }
     .header__menu ul li:nth-child(5){
         border-right-style: none;
+    }
+}
+
+/* Media query - Mobile - Inicio*/
+@media (max-width:576px){
+    .container{
+        width: 90%;
+    }
+    .container img{
+        padding-left: 50px;
+        width: 70%;
+    }
+    .descripcion{
+        padding-bottom: 20px;
     }
 }
 
