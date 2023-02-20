@@ -12,8 +12,6 @@ ul{
 a{
     text-decoration: none;
     color: black;
-
-
 }
 
 h2{
@@ -89,7 +87,7 @@ header h2{
     transition: 0.5s;
 }
 
-    /* Main */
+/* Main */
 
 .section{
     padding: 1000px;
@@ -103,7 +101,7 @@ header h2{
 }
 
 
-/*Pagina Inicio*/
+/* Pagina Inicio */
 
 .titulo-pagina{
     text-align: center;
@@ -124,7 +122,7 @@ header h2{
     padding-bottom: 60px;
 }
 
-/*Pagina Profesoras*/
+/* Pagina Profesoras */
 
 #tarjetaPresentacionProfesoras{
     display: flex;
@@ -212,7 +210,7 @@ header h2{
     transform: perspective(600px) rotateY(360deg);
 }
 
-/*Pagina Clases*/
+/* Pagina Clases */
 
 .tarjeta-tipo-de-clases{
     display: flex;
@@ -229,14 +227,12 @@ header h2{
     background-color: #edf9f9;
     flex: 1;
     transition: .3s all ease;
-
 }
 
 .tarjeta-tipo-de-clases div:hover{
     flex: 2;
     background-image: linear-gradient(45deg, pink, lightgreen, skyblue);
     transition: .3s all ease;
-    
 }
 
 .tarjeta-tipo-de-clases img{
@@ -244,7 +240,7 @@ header h2{
     border-radius: 10px;   
 }
 
-/* Pagina Horarios*/
+/* Pagina Horarios */
 
 .dias-horarios{
     text-align: center;
@@ -276,7 +272,6 @@ header h2{
     margin: 10px;
     position: static;
     text-align: center;
-
 }
 
 .container .col2 h4{
@@ -420,7 +415,6 @@ footer{
         height: 70%;
         left: 50px;
         top: 100px;
-
     }
     #tarjetaPresentacionProfesoras{
         justify-content: space-evenly;
@@ -442,7 +436,6 @@ footer{
 
 /* Media query - Mobile - Contacto */
 @media (max-width:576px){
-
     .contenedor-formulario{
         flex-direction: column;
         padding-bottom: 10px;
