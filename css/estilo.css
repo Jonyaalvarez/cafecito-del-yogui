@@ -111,6 +111,11 @@ header h2{
     padding-bottom: 20px;
 }
 
+#carouselExample{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
 
 /*Pagina Profesoras*/
 
@@ -199,6 +204,7 @@ header h2{
 .tarjetas-profesoras:hover .atras{
     transform: perspective(600px) rotateY(360deg);
 }
+
 /*Pagina Clases*/
 
 .tarjeta-tipo-de-clases{
@@ -226,10 +232,60 @@ header h2{
     
 }
 
-
 .tarjeta-tipo-de-clases img{
     width: 100%;
     border-radius: 10px;   
+}
+
+/* Pagina Horarios*/
+
+.dias-horarios{
+    text-align: center;
+}
+
+.horarios .container{
+    display: flex;
+    position: static;
+    align-content: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.container .col1{
+    border: 3px solid light;
+    background-color: lightpink;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+}
+
+.container .col2{
+    border: 1px double pink;
+    background-color: rgb(233, 174, 183);
+    border-radius: 10px;
+    width: 100px;
+    height: 80px;
+    margin: 10px;
+    position: static;
+    text-align: center;
+
+}
+
+.container .col2 h4{
+    font-size: medium;
+}
+
+.container .col2 p{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.precios{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 /*Pagina Contacto*/
