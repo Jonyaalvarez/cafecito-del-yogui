@@ -1,0 +1,9 @@
+@import url(./general/tipografia.scss);
+@import url(./general/colores.scss);
+@import url(./Layout/header.scss);
+@import url(./Layout/footer.scss);
+@import url(./paginas/index.scss);
+@import url(./paginas/profesoras.scss);
+@import url(./paginas/clases.scss);
+@import url(./paginas/horarios.scss);
+@import url(./paginas/contacto.scss);
