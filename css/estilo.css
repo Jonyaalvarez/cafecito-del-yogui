@@ -213,31 +213,100 @@ header h2{
 /* Pagina Clases */
 
 .tarjeta-tipo-de-clases{
-    display: flex;
-    padding: 60px 0px;
-}
-
-.tarjeta-tipo-de-clases div{
-    border: 3px solid lightblue;
-    border-radius: 20px;
-    margin-left: 10px;
-    height: auto;
-    padding: 20px 30px;
-    width: 150px;
-    background-color: #edf9f9;
-    flex: 1;
-    transition: .3s all ease;
-}
-
-.tarjeta-tipo-de-clases div:hover{
-    flex: 2;
-    background-image: linear-gradient(45deg, pink, lightgreen, skyblue);
-    transition: .3s all ease;
-}
-
-.tarjeta-tipo-de-clases img{
     width: 100%;
-    border-radius: 10px;   
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+}
+
+.tarjeta-tipo-de-clases .tarjeta-clases{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    padding: 10px;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(0, 0, 0, .3);
+}
+
+.tarjeta-tipo-de-clases .tarjeta-clases button{
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+    width: 30px;
+    height: 30px;
+    background-color: #ade8f4;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    opacity: 1;
+    transition: .3s ease;
+}
+
+.tarjeta-tipo-de-clases .tarjeta-clases:hover button{
+    transform: scale(25);
+    opacity: .5;
+}
+
+.tarjeta-tipo-de-clases .tarjeta-clases .tarjeta-clases__titulo{
+    z-index: 99;
+    position: absolute;
+    bottom: 15px;
+    right: 130px;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    pointer-events: none;
+    transition: .2s ease;
+    text-shadow: 0 0 15px black;
+    writing-mode: vertical-lr;
+    margin-bottom: 5px;
+}
+
+.tarjeta-tipo-de-clases .tarjeta-clases:hover .tarjeta-clases__titulo{
+    bottom: 70px;
+    right: 50px;
+}
+
+.tarjeta-tipo-de-clases .tarjeta-clases .tarjeta-clases__descripcion{
+    z-index: 99;
+    position: absolute;
+    bottom: 15px;
+    right: auto;
+    width: 400px;
+    color: black;
+    opacity: 0;
+    font-size: 16s;
+    text-align: left;
+    transition: .2s ease;
+}
+
+.tarjeta-tipo-de-clases .tarjeta-clases:hover .tarjeta-clases__descripcion{
+    opacity: 1;
+    right: auto;
+    z-index: 99;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.tarjeta-tipo-de-clases .tarjeta-clases .tarjeta-clases__imagen{
+    z-index: 100;
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 12px;
+    filter: grayscale(0);
+    transition: .3s ease;
+}
+
+.tarjeta-tipo-de-clases .tarjeta-clases:hover .tarjeta-clases__imagen{
+    filter: grayscale(100%);
+    width: 500px;
+    height: 320px;
 }
 
 /* Pagina Horarios */
