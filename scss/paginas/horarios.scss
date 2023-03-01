@@ -1,0 +1,44 @@
+
+.dias-horarios{
+    text-align: center;
+}
+
+.horarios .container{
+    display: flex;
+    position: static;
+    align-content: center;
+    width: 100%;
+    justify-content: center;
+    .col1{
+        border: 3px solid light;
+        background-color: lightpink;
+        border-radius: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        color: white;
+    }
+    .col2{
+        border: 1px double pink;
+        background-color: rgb(233, 174, 183);
+        border-radius: 10px;
+        width: 100px;
+        height: 80px;
+        margin: 10px;
+        position: static;
+        text-align: center;
+        h4{
+            font-size: medium;
+        }
+        p{
+            font-size: 16px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+.precios{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}

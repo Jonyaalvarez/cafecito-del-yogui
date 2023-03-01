@@ -1,0 +1,107 @@
+
+#tarjetaPresentacionProfesoras{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 30px;
+    padding-bottom: 100px;
+    .tarjetas-profesoras{
+        position: relative;
+        width: 300px;
+        height: 350px;
+        margin: 30px;
+    }
+    .tarjetas-profesoras .lado{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .tarjetas-profesoras .frente{
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px black;
+        
+    }
+    .tarjetas-profesoras .frente img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .tarjetas-profesoras .frente .texto-frente{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+    }
+    .tarjetas-profesoras .atras{
+        transform: perspective(600px) rotateY(180deg);
+        background-color: rgb(3, 35, 54);
+        padding: 15px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow:  0 5px 10px black;
+    }
+    .tarjetas-profesoras .atras .link{
+        border-top: solid 1px white;
+        height: 50px;
+        line-height: 50px;
+    }
+    .tarjetas-profesoras .atras .link a{
+        color: white;
+    }
+    .tarjetas-profesoras .atras .texto-atras{
+        font-size: 30px;
+        margin-top: 20px;
+        letter-spacing: 2px;
+    }
+    .tarjetas-profesoras .atras p{
+        letter-spacing: 1px;
+    }
+    .tarjetas-profesoras:hover .frente{
+        transform: perspective(600px) rotateY(180deg);
+    }
+    .tarjetas-profesoras:hover .atras{
+        transform: perspective(600px) rotateY(360deg);
+    }
+}
+
+@media (max-width:576px){
+    .tarjetas-profesoras{
+        margin: 10px;
+    }
+    .tarjetas-profesoras .lado{
+        width: 70%;
+        height: 70%;
+        left: 50px;
+        top: 100px;
+    }
+    #tarjetaPresentacionProfesoras{
+        justify-content: space-evenly;
+    }
+    .tarjetas-profesoras .atras{
+        padding: 10px;
+    }
+    .tarjetas-profesoras .atras .texto-atras{
+        font-size: 16px;
+        margin-top: 5px;
+        letter-spacing: 1px;
+    }
+    body{
+        width: 57vh;
+        height: 57vh;
+    }
+}
+
+
+
+

@@ -1,14 +1,16 @@
 // General
-@import url(./general/tipografia.scss);
-@import url(./general/colores.scss);
+@import "./general/tipografia.scss";
+@import "./general/colores.scss";
 
 //Layout
-@import url(./Layout/header.scss);
-@import url(./Layout/footer.scss);
+@import "./scss/Layout/header.scss";
+@import "./Layout/footer.scss";
+@import "./Layout/main.scss";
 
 //Paginas
-@import url(./paginas/index.scss);
-@import url(./paginas/profesoras.scss);
-@import url(./paginas/clases.scss);
-@import url(./paginas/horarios.scss);
-@import url(./paginas/contacto.scss);
+@import "./paginas/index.scss";
+@import "./paginas/profesoras.scss";
+@import "./paginas/clases.scss";
+@import "./paginas/horarios.scss";
+@import "./paginas/contacto.scss";
+
