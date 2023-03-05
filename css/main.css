@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/*h3*/
 h2 {
   font-family: 'Playfair Display', serif;
   font-size: 36px; }
@@ -8,7 +12,7 @@ h3 {
   text-align: center; }
 
 p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato light', sans-serif;
   font: size 18px; }
 
 header {
@@ -75,7 +79,7 @@ header {
   position: absolute; }
 
 footer {
-  background-color: #ade8f4;
+  background-color: #86d4d4;
   background-attachment: fixed;
   background-size: cover;
   padding: 10px;
