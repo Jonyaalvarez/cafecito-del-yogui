@@ -28,12 +28,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left: 50px;
+        padding-left: 15px;
         padding-bottom: 20px;
         position: relative;
-        width: 510px;
+        width: 490px;
         height: 350px;
-
         background-color: white;
         overflow: hidden;
         margin-bottom: 60px;
@@ -44,11 +43,12 @@
             background-color: rgb(161, 157, 157);
         }
         button{
+            z-index: 159;
             position: absolute;
-            right: 30px;
-            bottom: 40px;
-            width: 50px;
-            height: 50px;
+            left: 10px;
+            bottom: 10px;
+            width: 60px;
+            height: 60px;
             background-color: #ade8f4;
             border: none;
             border-radius: 30px;
@@ -56,12 +56,12 @@
             opacity: 1;
             transition: .3s ease;
             &:hover{
-                transform: scale(20);
+                transform: scale(17);
                 opacity: .5;
             }
         }
         .tarjeta-clases__titulo{
-            z-index: 99;
+            z-index: 199;
             position: absolute;
             bottom: 750px;
             font-size: 50px;
@@ -70,15 +70,15 @@
             pointer-events: none;
             transition: .1s ease;
             text-shadow: 0 0 15px black;
-            writing-mode: vertical-lr;
+            writing-mode: horizontal-lr;
             margin-bottom: 5px;
             }
             &:hover .tarjeta-clases__titulo{
-            bottom: 70px;
+            bottom: 10px;
             right: 50px;
             }
             .tarjeta-clases__descripcion{
-            z-index: 99;
+            z-index: 199;
             position: absolute;
             bottom: 15px;
             right: auto;
@@ -88,18 +88,19 @@
             font-size: 16px;
             text-align: center;
             transition: .2s ease;
-            padding-bottom: 40px;
+            padding-bottom: 70px;
             }
             &:hover .tarjeta-clases__descripcion{
             opacity: 1;
             right: auto;
-            z-index: 99;
+            z-index: 199;
             padding-left: 10px;
             font-weight: 400;
             }
             .tarjeta-clases__imagen{
+            position: static;
             z-index: 100;
-            width: 400px;
+            width: 450px;
             height: 300px;
             background-size: cover;
             border-radius: 25% 10%;
@@ -108,8 +109,8 @@
             }
             &:hover .tarjeta-clases__imagen{
             filter: grayscale(100%);
-            width: 500px;
-            height: 320px;
+            width: 450px;
+            height: 330px;
             }
     }
     .tarjeta-clases-2{
@@ -118,14 +119,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left: 50px;
+        padding-left: 15px; 
+        padding-bottom: 20px;
         position: relative;
-        width: 510px;
+        width: 490px;
         height: 350px;
-        padding: 10px;
         background-color: white;
         overflow: hidden;
-        margin-bottom: 10px;
+        margin-bottom: 60px;
         margin-left: 500px;
         border-radius: 25% 10%;
         box-shadow: 0 0 15px black;
@@ -136,11 +137,12 @@
             background-color: lightgreen;
             }
         button{
+            z-index: 159;
             position: absolute;
-            right: 30px;
-            bottom: 40px;
-            width: 50px;
-            height: 50px;
+            left: 10px;
+            bottom: 10px;
+            width: 65px;
+            height: 60px;
             background-color: #ade8f4;
             border: none;
             border-radius: 30px;
@@ -148,12 +150,12 @@
             opacity: 1;
             transition: .3s ease;
             &:hover{
-                transform: scale(20);
+                transform: scale(17);
                 opacity: .5;
             }
         } 
         .tarjeta-clases__titulo{
-            z-index: 99;
+            z-index: 199;
             position: absolute;
             bottom: 750px;
             font-size: 50px;
@@ -162,15 +164,15 @@
             pointer-events: none;
             transition: .1s ease;
             text-shadow: 0 0 15px black;
-            writing-mode: vertical-lr;
+            writing-mode: horizontal-lr;
             margin-bottom: 5px;
             }
             &:hover .tarjeta-clases__titulo{
-            bottom: 70px;
+            bottom: 10px;
             right: 50px;
             }
             .tarjeta-clases__descripcion{
-            z-index: 99;
+            z-index: 199;
             position: absolute;
             bottom: 15px;
             right: auto;
@@ -180,18 +182,19 @@
             font-size: 16px;
             text-align: center;
             transition: .2s ease;
-            padding-bottom: 40px;
+            padding-bottom: 60px;
             }
             &:hover .tarjeta-clases__descripcion{
             opacity: 1;
             right: auto;
-            z-index: 99;
+            z-index: 199;
             padding-left: 10px;
             font-weight: 400;
             }
             .tarjeta-clases__imagen{
+            position: static;
             z-index: 100;
-            width: 400px;
+            width: 470px;
             height: 300px;
             background-size: cover;
             border-radius: 25% 10%;
@@ -200,8 +203,8 @@
             }
             &:hover .tarjeta-clases__imagen{
             filter: grayscale(100%);
-            width: 500px;
-            height: 320px;
+            width: 450px;
+            height: 330px;
             }
     }
     .tarjeta-clases-3{
@@ -210,14 +213,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left: 50px;
+        padding-left: 15px;
+        padding-bottom: 20px;
         position: relative;
-        width: 510px;
+        width: 490px;
         height: 350px;
-        padding: 10px;
         background-color: white;
         overflow: hidden;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         margin-left: 70px;
         border-radius: 25% 10%;
         box-shadow: 0 0 15px black;
@@ -228,11 +231,12 @@
             background-color: rgb(244, 244, 92);
             }
         button{
+            z-index: 159;
             position: absolute;
-            right: 30px;
-            bottom: 40px;
-            width: 50px;
-            height: 50px;
+            left: 10px;
+            bottom: 10px;
+            width: 60px;
+            height: 60px;
             background-color: #ade8f4;
             border: none;
             border-radius: 30px;
@@ -240,12 +244,12 @@
             opacity: 1;
             transition: .3s ease;
             &:hover{
-                transform: scale(20);
+                transform: scale(17);
                 opacity: .5;
             }
         }
         .tarjeta-clases__titulo{
-            z-index: 99;
+            z-index: 199;
             position: absolute;
             bottom: 750px;
             font-size: 50px;
@@ -254,15 +258,15 @@
             pointer-events: none;
             transition: .1s ease;
             text-shadow: 0 0 15px black;
-            writing-mode: vertical-lr;
+            writing-mode: horizontal-lr;
             margin-bottom: 5px;
             }
             &:hover .tarjeta-clases__titulo{
-            bottom: 70px;
+            bottom: 10px;
             right: 50px;
             }
             .tarjeta-clases__descripcion{
-            z-index: 99;
+            z-index: 199;
             position: absolute;
             bottom: 15px;
             right: auto;
@@ -272,18 +276,19 @@
             font-size: 16px;
             text-align: center;
             transition: .2s ease;
-            padding-bottom: 40px;
+            padding-bottom: 70px;
             }
             &:hover .tarjeta-clases__descripcion{
             opacity: 1;
             right: auto;
-            z-index: 99;
+            z-index: 199;
             padding-left: 10px;
             font-weight: 400;
             }
             .tarjeta-clases__imagen{
+            position: static;
             z-index: 100;
-            width: 400px;
+            width: 450px;
             height: 300px;
             background-size: cover;
             border-radius: 25% 10%;
@@ -292,8 +297,8 @@
             }
             &:hover .tarjeta-clases__imagen{
             filter: grayscale(100%);
-            width: 500px;
-            height: 320px;
+            width: 450px;
+            height: 330px;
             }
     }
     .tarjeta-clases-4{
@@ -302,14 +307,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left: 50px;
+        padding-left: 10px;
+        padding-bottom: 20px;
         position: relative;
-        width: 510px;
+        width: 490px;
         height: 350px;
-        padding: 10px;
         background-color: white;
         overflow: hidden;
-        margin-bottom: 10px;
+        margin-bottom: 60px;
         margin-left: 500px;
         border-radius: 25% 10%;
         box-shadow: 0 0 15px black;
@@ -320,11 +325,12 @@
             background-color: lightgrey;
             }   
         button{
+            z-index: 159;
             position: absolute;
-            right: 30px;
-            bottom: 40px;
-            width: 50px;
-            height: 50px;
+            left: 10px;
+            bottom: 10px;
+            width: 60px;
+            height: 60px;
             background-color: #ade8f4;
             border: none;
             border-radius: 30px;
@@ -332,12 +338,12 @@
             opacity: 1;
             transition: .3s ease;
             &:hover{
-                transform: scale(20);
+                transform: scale(17);
                 opacity: .5;
             }
         }
         .tarjeta-clases__titulo{
-            z-index: 99;
+            z-index: 199;
             position: absolute;
             bottom: 750px;
             font-size: 50px;
@@ -346,15 +352,15 @@
             pointer-events: none;
             transition: .1s ease;
             text-shadow: 0 0 15px black;
-            writing-mode: vertical-lr;
+            writing-mode: horizontal-lr;
             margin-bottom: 5px;
             }
             &:hover .tarjeta-clases__titulo{
-            bottom: 70px;
+            bottom: 10px;
             right: 50px;
             }
             .tarjeta-clases__descripcion{
-            z-index: 99;
+            z-index: 199;
             position: absolute;
             bottom: 15px;
             right: auto;
@@ -364,18 +370,19 @@
             font-size: 16px;
             text-align: center;
             transition: .2s ease;
-            padding-bottom: 40px;
+            padding-bottom: 70px;
             }
             &:hover .tarjeta-clases__descripcion{
             opacity: 1;
             right: auto;
-            z-index: 99;
+            z-index: 199;
             padding-left: 10px;
             font-weight: 400;
             }
             .tarjeta-clases__imagen{
+            position: static;
             z-index: 100;
-            width: 400px;
+            width: 450px;
             height: 300px;
             background-size: cover;
             border-radius: 25% 10%;
@@ -384,8 +391,8 @@
             }
             &:hover .tarjeta-clases__imagen{
             filter: grayscale(100%);
-            width: 500px;
-            height: 320px;
+            width: 450px;
+            height: 330px;
             }
     }
 }
