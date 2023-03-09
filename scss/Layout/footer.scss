@@ -1,5 +1,16 @@
 
+.contenedor-paginas{
+    width: 100%;
+    display: grid;
+    footer{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+}
+
 footer{
+    min-height: 80px;
+    width: 100%;
     background-color: $primary-color;
     background-attachment: fixed;
     background-size: cover;
@@ -7,7 +18,7 @@ footer{
     text-align: center;
     box-shadow: 0px 0px 8px 0px black;
     .footer-logos{
-        height: 40px;
+        height: auto;
         width: 50px;
         padding: 0px 10px;
         }

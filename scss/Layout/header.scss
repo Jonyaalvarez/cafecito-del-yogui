@@ -1,6 +1,16 @@
-header{
-    height: auto;
+
+.contenedor-paginas{
     width: 100%;
+    display: grid;
+        header{
+            grid-column-start: 1;
+            grid-column-end: -1;
+        }
+}
+
+header{
+    min-height: 100px;
+    width: auto;
     position: sticky;
     top: 0;
     left: 0;
@@ -20,6 +30,7 @@ header{
     .header__logo{
         height: 60%;
         display: flex;
+        align-items: center;
     }
     .header__logo img{
         width: 50px;
@@ -41,8 +52,9 @@ header{
             &:hover{
         color: black;
         background-color: lightblue;
-        border: 1px solid blue;
+        border: 1px solid lightblue;
         transition: 0.5s;
+        border-radius: 1000px;
         }
     }
     ul{
@@ -53,27 +65,32 @@ header{
         color: black;
     }
 }
+
 @media (max-width:576px){
     header{
         flex-direction: column;
     }
-    .header__menu ul{
-        padding-left: 0;
-    }
-    .header__menu ul li{
-        margin: 0;
-        font-weight: 200;
-        padding:5px;
-        border-right-style: groove;
-    }
-    .header__menu ul li:nth-child(5){
-        border-right-style: none;
+    .header__menu{
+        width: 200px;
+        ul{
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 16px;
+            li{
+                font-weight: 50;
+                border-right-style: groove;
+                text-align: left;
+                &:nth-child(5){
+                    border-right-style: none;
+                }
+            }
+        }
     }
 }
+
 .header-clases{
     position: absolute;
 }
-
 
 
 

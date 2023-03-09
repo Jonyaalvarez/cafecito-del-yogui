@@ -15,9 +15,16 @@ p {
   font-family: 'Lato light', sans-serif;
   font: size 18px; }
 
-header {
-  height: auto;
+.contenedor-paginas {
   width: 100%;
+  display: grid; }
+  .contenedor-paginas header {
+    grid-column-start: 1;
+    grid-column-end: -1; }
+
+header {
+  min-height: 100px;
+  width: auto;
   position: sticky;
   top: 0;
   left: 0;
@@ -35,7 +42,8 @@ header {
     justify-content: center; }
   header .header__logo {
     height: 60%;
-    display: flex; }
+    display: flex;
+    align-items: center; }
   header .header__logo img {
     width: 50px;
     height: 50px;
@@ -54,8 +62,9 @@ header {
     header .header__menu ul li:hover {
       color: black;
       background-color: lightblue;
-      border: 1px solid blue;
-      transition: 0.5s; }
+      border: 1px solid lightblue;
+      transition: 0.5s;
+      border-radius: 1000px; }
   header ul {
     list-style-type: none; }
   header a {
@@ -65,20 +74,32 @@ header {
 @media (max-width: 576px) {
   header {
     flex-direction: column; }
-  .header__menu ul {
-    padding-left: 0; }
-  .header__menu ul li {
-    margin: 0;
-    font-weight: 200;
-    padding: 5px;
-    border-right-style: groove; }
-  .header__menu ul li:nth-child(5) {
-    border-right-style: none; } }
+  .header__menu {
+    width: 200px; }
+    .header__menu ul {
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 16px; }
+      .header__menu ul li {
+        font-weight: 50;
+        border-right-style: groove;
+        text-align: left; }
+        .header__menu ul li:nth-child(5) {
+          border-right-style: none; } }
 
 .header-clases {
   position: absolute; }
 
+.contenedor-paginas {
+  width: 100%;
+  display: grid; }
+  .contenedor-paginas footer {
+    grid-column-start: 1;
+    grid-column-end: -1; }
+
 footer {
+  min-height: 80px;
+  width: 100%;
   background-color: #86d4d4;
   background-attachment: fixed;
   background-size: cover;
@@ -86,7 +107,7 @@ footer {
   text-align: center;
   box-shadow: 0px 0px 8px 0px black; }
   footer .footer-logos {
-    height: 40px;
+    height: auto;
     width: 50px;
     padding: 0px 10px; }
 
@@ -104,71 +125,87 @@ main .section {
   background-attachment: fixed;
   background-size: cover; }
 
-.titulo-pagina {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-
-.contenedor-todo {
-  width: 240px;
-  margin: auto;
-  perspective: 1000px;
-  position: relative;
-  padding-bottom: 250px;
-  padding-top: 50px; }
-  .contenedor-todo .contenedor-carrousel {
-    width: 100%;
-    position: absolute;
-    animation: rotar 30s infinite;
-    transform-style: preserve-3d; }
-    .contenedor-todo .contenedor-carrousel figure {
-      width: 100%;
-      height: 200px;
-      overflow: hidden;
-      position: absolute;
-      margin-bottom: 250px; }
-    .contenedor-todo .contenedor-carrousel img {
-      width: 100%; }
-    .contenedor-todo .contenedor-carrousel figure:nth-child(1) {
-      transform: rotateY(0deg) translateZ(300px); }
-    .contenedor-todo .contenedor-carrousel figure:nth-child(2) {
-      transform: rotateY(45deg) translateZ(300px); }
-    .contenedor-todo .contenedor-carrousel figure:nth-child(3) {
-      transform: rotateY(90deg) translateZ(300px); }
-    .contenedor-todo .contenedor-carrousel figure:nth-child(4) {
-      transform: rotateY(135deg) translateZ(300px); }
-    .contenedor-todo .contenedor-carrousel figure:nth-child(5) {
-      transform: rotateY(180deg) translateZ(300px); }
-    .contenedor-todo .contenedor-carrousel figure:nth-child(6) {
-      transform: rotateY(225deg) translateZ(300px); }
-    .contenedor-todo .contenedor-carrousel figure:nth-child(7) {
-      transform: rotateY(270deg) translateZ(300px); }
-    .contenedor-todo .contenedor-carrousel figure:nth-child(8) {
-      transform: rotateY(315deg) translateZ(300px); }
-    .contenedor-todo .contenedor-carrousel figure:nth-child(9) {
-      transform: rotateY(360deg) translateZ(300px); }
+.contenedor-paginas {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto); }
+  .contenedor-paginas #cuerpoInicio {
+    grid-column: 1; }
+    .contenedor-paginas #cuerpoInicio .titulo-pagina {
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+    .contenedor-paginas #cuerpoInicio .contenedor-todo {
+      width: 240px;
+      margin: auto;
+      perspective: 1000px;
+      position: relative;
+      padding-bottom: 250px;
+      padding-top: 50px; }
+      .contenedor-paginas #cuerpoInicio .contenedor-todo .contenedor-carrousel {
+        width: 100%;
+        position: absolute;
+        animation: rotar 30s infinite;
+        transform-style: preserve-3d; }
+        .contenedor-paginas #cuerpoInicio .contenedor-todo .contenedor-carrousel figure {
+          width: 100%;
+          height: 200px;
+          overflow: hidden;
+          position: absolute;
+          margin-bottom: 250px; }
+        .contenedor-paginas #cuerpoInicio .contenedor-todo .contenedor-carrousel img {
+          width: 100%; }
+        .contenedor-paginas #cuerpoInicio .contenedor-todo .contenedor-carrousel figure:nth-child(1) {
+          transform: rotateY(0deg) translateZ(300px); }
+        .contenedor-paginas #cuerpoInicio .contenedor-todo .contenedor-carrousel figure:nth-child(2) {
+          transform: rotateY(45deg) translateZ(300px); }
+        .contenedor-paginas #cuerpoInicio .contenedor-todo .contenedor-carrousel figure:nth-child(3) {
+          transform: rotateY(90deg) translateZ(300px); }
+        .contenedor-paginas #cuerpoInicio .contenedor-todo .contenedor-carrousel figure:nth-child(4) {
+          transform: rotateY(135deg) translateZ(300px); }
+        .contenedor-paginas #cuerpoInicio .contenedor-todo .contenedor-carrousel figure:nth-child(5) {
+          transform: rotateY(180deg) translateZ(300px); }
+        .contenedor-paginas #cuerpoInicio .contenedor-todo .contenedor-carrousel figure:nth-child(6) {
+          transform: rotateY(225deg) translateZ(300px); }
+        .contenedor-paginas #cuerpoInicio .contenedor-todo .contenedor-carrousel figure:nth-child(7) {
+          transform: rotateY(270deg) translateZ(300px); }
+        .contenedor-paginas #cuerpoInicio .contenedor-todo .contenedor-carrousel figure:nth-child(8) {
+          transform: rotateY(315deg) translateZ(300px); }
+        .contenedor-paginas #cuerpoInicio .contenedor-todo .contenedor-carrousel figure:nth-child(9) {
+          transform: rotateY(360deg) translateZ(300px); }
 
 @keyframes rotar {
   from {
     transform: rotateY(0deg); }
   to {
     transform: rotateY(360deg); } }
+    .contenedor-paginas #cuerpoInicio .descripcion {
+      margin: 10px;
+      padding-bottom: 60px; }
 
-.descripcion {
-  padding-bottom: 60px; }
+.contenedor-paginas {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3 1fr); }
 
 #tarjetaPresentacionProfesoras {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  min-height: 30px;
-  padding-bottom: 100px; }
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: 50px 550px; }
+  #tarjetaPresentacionProfesoras .titulo-pagina {
+    grid-column: span 3;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px; }
   #tarjetaPresentacionProfesoras .tarjetas-profesoras {
-    position: relative;
+    position: sticky;
     width: 300px;
     height: 350px;
-    margin: 30px; }
+    padding-left: 70px;
+    padding-bottom: 50px;
+    padding-top: 30px; }
   #tarjetaPresentacionProfesoras .tarjetas-profesoras .lado {
     position: absolute;
     width: 100%;
@@ -239,14 +276,30 @@ main .section {
     width: 57vh;
     height: 57vh; } }
 
+.contenedor-paginas {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3 1fr); }
+
+#cuerpoClases {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50px 225px 225px; }
+  #cuerpoClases .titulo-pagina {
+    grid-column: span 2;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px; }
+
 .tarjeta-tipo-de-clases {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  flex-direction: column; }
+  display: grid;
+  grid-template-columns: 50% 50%; }
   .tarjeta-tipo-de-clases .tarjeta-clases {
+    display: grid;
+    padding-left: 50px;
     position: relative;
     width: 510px;
     height: 350px;
@@ -254,8 +307,10 @@ main .section {
     background-color: white;
     overflow: hidden;
     margin-bottom: 10px;
-    border-radius: 20px;
+    border-radius: 25% 10%;
     box-shadow: 0 0 15px black; }
+    .tarjeta-tipo-de-clases .tarjeta-clases:hover {
+      background-color: #a19d9d; }
     .tarjeta-tipo-de-clases .tarjeta-clases button {
       position: absolute;
       right: 30px;
@@ -300,7 +355,7 @@ main .section {
       width: 400px;
       color: black;
       opacity: 0;
-      font-size: 16s;
+      font-size: 16px;
       text-align: center;
       transition: .2s ease;
       padding-bottom: 40px; }
@@ -309,13 +364,13 @@ main .section {
       right: auto;
       z-index: 99;
       padding-left: 10px;
-      font-weight: 700; }
+      font-weight: 400; }
     .tarjeta-tipo-de-clases .tarjeta-clases .tarjeta-clases__imagen {
       z-index: 100;
       width: 400px;
       height: 300px;
       background-size: cover;
-      border-radius: 12px;
+      border-radius: 25% 10%;
       filter: grayscale(0);
       transition: .3s ease; }
     .tarjeta-tipo-de-clases .tarjeta-clases:hover .tarjeta-clases__imagen {
