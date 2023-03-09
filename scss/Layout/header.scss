@@ -10,7 +10,7 @@
 
 header{
     min-height: 100px;
-    width: auto;
+    width: 100%;
     position: sticky;
     top: 0;
     left: 0;
@@ -55,7 +55,6 @@ header{
         background-color: lightblue;
         border: 1px solid lightblue;
         transition: 0.5s;
-        border-radius: 1000px;
         }
     }
     ul{
@@ -71,22 +70,6 @@ header{
     header{
         flex-direction: column;
     }
-    .header__menu{
-        width: 200px;
-        ul{
-            flex-direction: row;
-            justify-content: space-between;
-            font-size: 16px;
-            li{
-                font-weight: 50;
-                border-right-style: groove;
-                text-align: left;
-                &:nth-child(5){
-                    border-right-style: none;
-                }
-            }
-        }
-    }
 }
 
 .header-clases{
@@ -95,5 +78,11 @@ header{
 
 
 
-
+/*li{
+    font-weight: 50;
+    border-right-style: groove;
+    &:nth-child(5){
+        border-right-style: none;
+    }
+}*/
 

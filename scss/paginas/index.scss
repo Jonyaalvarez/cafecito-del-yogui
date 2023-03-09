@@ -59,6 +59,18 @@
             padding-top: 60px;
         }
     }
+    @media (max-width:576px) {
+        .contenedor-paginas{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, auto);
+            #cuerpoInicio{
+                grid-column: 1;
+                grid-template-rows:50px 200px auto;
+            }
+        }
+    }
 }
 
 
