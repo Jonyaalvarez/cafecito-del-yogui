@@ -383,47 +383,75 @@ main .section {
 #tituloClases {
   padding-top: 50px; }
 
-.dias-horarios {
-  text-align: center; }
-
-.horarios .container {
-  display: flex;
-  position: static;
-  align-content: center;
+.contenedor-paginas {
   width: 100%;
-  justify-content: center; }
-  .horarios .container .col1 {
-    border: 3px solid light;
-    background-color: lightpink;
-    border-radius: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    color: white; }
-  .horarios .container .col2 {
-    border: 1px double pink;
-    background-color: #e9aeb7;
-    border-radius: 10px;
-    width: 100px;
-    height: 80px;
-    margin: 10px;
-    position: static;
-    text-align: center; }
-    .horarios .container .col2 h4 {
-      font-size: medium; }
-    .horarios .container .col2 p {
-      font-size: 16px;
-      padding: 0;
-      margin: 0; }
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3 1fr); }
 
-.precios {
-  text-align: center;
-  padding-bottom: 20px;
-  padding-top: 10px; }
+#cuerpoHorarios {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 550px; }
+  #cuerpoHorarios .titulo-pagina {
+    grid-column: 1FR;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px; }
+  #cuerpoHorarios .horarios .container {
+    display: flex;
+    position: static;
+    align-content: center;
+    justify-content: center; }
+    #cuerpoHorarios .horarios .container .col1 {
+      border: 3px solid light;
+      background-color: lightpink;
+      border-radius: 10px;
+      margin-left: 5px;
+      margin-right: 5px;
+      color: white; }
+    #cuerpoHorarios .horarios .container .col2 {
+      border: 1px double pink;
+      background-color: #e9aeb7;
+      border-radius: 10px;
+      width: 100px;
+      height: 80px;
+      margin: 10px;
+      position: static;
+      text-align: center; }
+      #cuerpoHorarios .horarios .container .col2 h4 {
+        font-size: medium; }
+      #cuerpoHorarios .horarios .container .col2 p {
+        font-size: 16px;
+        padding: 0;
+        margin: 0; }
+  #cuerpoHorarios .horarios, #cuerpoHorarios .precios {
+    display: grid;
+    grid-column: 1;
+    padding-top: 30px;
+    justify-content: center; }
+  #cuerpoHorarios .precios {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 80px; }
+
+.contenedor-paginas {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3 1fr); }
 
 .contenedor-formulario {
-  min-height: 550px;
-  padding-bottom: 10px; }
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px auto; }
+  .contenedor-formulario .titulo-pagina {
+    grid-column: 1FR;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px; }
   .contenedor-formulario .formulario {
+    display: grid;
     background: rgba(50, 177, 194, 0.6);
     width: 90%;
     max-width: 550px;
@@ -431,7 +459,7 @@ main .section {
     padding: 5px 35px;
     margin-top: 30px;
     margin-bottom: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 90px;
     border-radius: 20px; }
     .contenedor-formulario .formulario .formulario-label {
       display: block;

@@ -1,8 +1,24 @@
 
+.contenedor-paginas{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3 1fr);
+}
+
+
 .contenedor-formulario{
-    min-height: 550px;
-    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:50px auto;
+    .titulo-pagina{
+        grid-column: 1FR;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
     .formulario{
+        display: grid;
         background: rgba(50, 177, 194, 0.6);
         width: 90%;
         max-width: 550px;
@@ -10,7 +26,7 @@
         padding: 5px 35px;
         margin-top: 30px;
         margin-bottom: 20px;
-        padding-bottom: 30px;
+        padding-bottom: 90px;
         border-radius: 20px;
         .formulario-label{
             display: block;

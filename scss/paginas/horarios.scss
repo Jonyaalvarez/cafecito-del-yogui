@@ -1,44 +1,67 @@
 
-.dias-horarios{
-    text-align: center;
-}
-
-.horarios .container{
-    display: flex;
-    position: static;
-    align-content: center;
+.contenedor-paginas{
     width: 100%;
-    justify-content: center;
-    .col1{
-        border: 3px solid light;
-        background-color: lightpink;
-        border-radius: 10px;
-        margin-left: 5px;
-        margin-right: 5px;
-        color: white;
-    }
-    .col2{
-        border: 1px double pink;
-        background-color: rgb(233, 174, 183);
-        border-radius: 10px;
-        width: 100px;
-        height: 80px;
-        margin: 10px;
-        position: static;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3 1fr);
+}
+
+#cuerpoHorarios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:50px 550px;
+    .titulo-pagina{
+        grid-column: 1FR;
         text-align: center;
-        h4{
-            font-size: medium;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .horarios .container{
+        display: flex;
+        position: static;
+        align-content: center;
+        justify-content: center;
+        .col1{
+            border: 3px solid light;
+            background-color: lightpink;
+            border-radius: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+            color: white;
         }
-        p{
-            font-size: 16px;
-            padding: 0;
-            margin: 0;
+        .col2{
+            border: 1px double pink;
+            background-color: rgb(233, 174, 183);
+            border-radius: 10px;
+            width: 100px;
+            height: 80px;
+            margin: 10px;
+            position: static;
+            text-align: center;
+            h4{
+                font-size: medium;
+            }
+            p{
+                font-size: 16px;
+                padding: 0;
+                margin: 0;
+            }
         }
+    }
+    .horarios, .precios{
+        display: grid;
+        grid-column: 1;
+        padding-top: 30px;
+        justify-content: center;
+
+    }
+    .precios{
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 80px;
     }
 }
 
-.precios{
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 10px;
-}
+
+
+
