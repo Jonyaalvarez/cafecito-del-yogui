@@ -87,39 +87,39 @@
     .tarjetas-profesoras:hover .atras{
         transform: perspective(600px) rotateY(360deg);
     }
-    @media (max-width:576px){
-        #tarjetaPresentacionProfesoras{
-            display: grid;
-            grid-template-columns:100%;
-            grid-column: 1;
-            grid-template-rows:25px 25px 25px 25px;
-        }
-        .tarjetas-profesoras{
-            grid-column: 1;
-            display: grid;
-            width: 200px;
-            height: 200px;
-            .profe-marilina{
-                display: grid;
-                grid-column: span 3;
-                grid-row: 2;
-            }
-            .profe-paula{
-                display: grid;
-                grid-column: 1;
-                grid-row: 3;
-            }
-            .profe-patricia{
-                display: grid;
-                grid-column: 1;
-                grid-row: 4;
-            }
-        }
-    }
+
 }
 
 
-
+@media (max-width:576px){
+    #tarjetaPresentacionProfesoras{
+        display: grid;
+        grid-template-columns:100%;
+        grid-column: 1;
+        grid-template-rows:25px 25px 25px 25px;
+    }
+    .tarjetas-profesoras{
+        grid-column: 1;
+        display: grid;
+        width: 200px;
+        height: 200px;
+        .profe-marilina{
+            display: grid;
+            grid-column: span 3;
+            grid-row: 2;
+        }
+        .profe-paula{
+            display: grid;
+            grid-column: 1;
+            grid-row: 3;
+        }
+        .profe-patricia{
+            display: grid;
+            grid-column: 1;
+            grid-row: 4;
+        }
+    }
+}
 
 
 

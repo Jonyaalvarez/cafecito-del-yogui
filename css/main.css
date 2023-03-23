@@ -132,7 +132,8 @@ main .section {
   grid-template-rows: repeat(3, auto); }
   .contenedor-paginas #cuerpoInicio {
     grid-column: 1;
-    grid-template-rows: 50px 200px auto; }
+    grid-template-rows: 50px 200px auto;
+    padding-bottom: 90px; }
     .contenedor-paginas #cuerpoInicio .titulo-pagina {
       text-align: center;
       padding-top: 20px;
@@ -266,29 +267,30 @@ main .section {
     transform: perspective(600px) rotateY(180deg); }
   #tarjetaPresentacionProfesoras .tarjetas-profesoras:hover .atras {
     transform: perspective(600px) rotateY(360deg); }
-  @media (max-width: 576px) {
-    #tarjetaPresentacionProfesoras #tarjetaPresentacionProfesoras {
+
+@media (max-width: 576px) {
+  #tarjetaPresentacionProfesoras {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column: 1;
+    grid-template-rows: 25px 25px 25px 25px; }
+  .tarjetas-profesoras {
+    grid-column: 1;
+    display: grid;
+    width: 200px;
+    height: 200px; }
+    .tarjetas-profesoras .profe-marilina {
       display: grid;
-      grid-template-columns: 100%;
-      grid-column: 1;
-      grid-template-rows: 25px 25px 25px 25px; }
-    #tarjetaPresentacionProfesoras .tarjetas-profesoras {
-      grid-column: 1;
+      grid-column: span 3;
+      grid-row: 2; }
+    .tarjetas-profesoras .profe-paula {
       display: grid;
-      width: 200px;
-      height: 200px; }
-      #tarjetaPresentacionProfesoras .tarjetas-profesoras .profe-marilina {
-        display: grid;
-        grid-column: span 3;
-        grid-row: 2; }
-      #tarjetaPresentacionProfesoras .tarjetas-profesoras .profe-paula {
-        display: grid;
-        grid-column: 1;
-        grid-row: 3; }
-      #tarjetaPresentacionProfesoras .tarjetas-profesoras .profe-patricia {
-        display: grid;
-        grid-column: 1;
-        grid-row: 4; } }
+      grid-column: 1;
+      grid-row: 3; }
+    .tarjetas-profesoras .profe-patricia {
+      display: grid;
+      grid-column: 1;
+      grid-row: 4; } }
 
 .contenedor-paginas {
   width: 100%;
@@ -297,9 +299,8 @@ main .section {
   grid-template-rows: repeat(3 1fr); }
 
 #cuerpoClases {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 10% 45% 45%; }
+  display: flex;
+  flex-direction: column; }
   #cuerpoClases .titulo-pagina {
     grid-column: span 2;
     text-align: center;
@@ -309,11 +310,11 @@ main .section {
 .tarjeta-tipo-de-clases {
   width: 100%;
   height: 100%;
-  display: grid;
-  grid-template-columns: 50% 50%; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 60px; }
   .tarjeta-tipo-de-clases .tarjeta-clases-1 {
-    grid-column: 1;
-    grid-row: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,8 +325,7 @@ main .section {
     height: 350px;
     background-color: white;
     overflow: hidden;
-    margin-bottom: 60px;
-    margin-left: 70px;
+    margin: 40px;
     border-radius: 25% 10%;
     box-shadow: 0 0 15px black; }
     .tarjeta-tipo-de-clases .tarjeta-clases-1:hover {
@@ -393,8 +393,6 @@ main .section {
       width: 450px;
       height: 330px; }
   .tarjeta-tipo-de-clases .tarjeta-clases-2 {
-    grid-column: 2;
-    grid-row: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -405,8 +403,7 @@ main .section {
     height: 350px;
     background-color: white;
     overflow: hidden;
-    margin-bottom: 60px;
-    margin-left: 500px;
+    margin: 40px;
     border-radius: 25% 10%;
     box-shadow: 0 0 15px black; }
     .tarjeta-tipo-de-clases .tarjeta-clases-2:hover {
@@ -476,20 +473,16 @@ main .section {
       width: 450px;
       height: 330px; }
   .tarjeta-tipo-de-clases .tarjeta-clases-3 {
-    grid-column: 1;
-    grid-row: 3;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 15px;
-    padding-bottom: 20px;
     position: relative;
     width: 490px;
     height: 350px;
     background-color: white;
     overflow: hidden;
-    margin-bottom: 60px;
-    margin-left: 70px;
+    margin: 40px;
     border-radius: 25% 10%;
     box-shadow: 0 0 15px black; }
     .tarjeta-tipo-de-clases .tarjeta-clases-3:hover {
@@ -559,20 +552,16 @@ main .section {
       width: 450px;
       height: 330px; }
   .tarjeta-tipo-de-clases .tarjeta-clases-4 {
-    grid-column: 2;
-    grid-row: 3;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 10px;
-    padding-bottom: 20px;
     position: relative;
     width: 490px;
     height: 350px;
     background-color: white;
     overflow: hidden;
-    margin-bottom: 60px;
-    margin-left: 500px;
+    margin: 40px;
     border-radius: 25% 10%;
     box-shadow: 0 0 15px black; }
     .tarjeta-tipo-de-clases .tarjeta-clases-4:hover {
@@ -657,7 +646,8 @@ main .section {
 #cuerpoHorarios {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 550px; }
+  grid-template-rows: 50px 550px;
+  padding-bottom: 90px; }
   #cuerpoHorarios .titulo-pagina {
     grid-column: 1FR;
     text-align: center;
@@ -709,7 +699,8 @@ main .section {
 .contenedor-formulario {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px auto; }
+  grid-template-rows: 50px auto;
+  padding-bottom: 90px; }
   .contenedor-formulario .titulo-pagina {
     grid-column: 1FR;
     text-align: center;
