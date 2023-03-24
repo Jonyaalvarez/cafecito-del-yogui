@@ -75,11 +75,10 @@
 
 @media (max-width:576px){
     .contenedor-formulario{
+        display: flex;
         flex-direction: column;
-        padding-bottom: 10px;
     }
     .contenedor-formulario .formulario{
         width: 70%;
     }
-
 }

@@ -63,6 +63,13 @@
     }
 }
 
-
+@media (max-width:576px){
+    #cuerpoHorarios{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 90px;
+        padding-right: 20px;
+    }
+}
 
 
